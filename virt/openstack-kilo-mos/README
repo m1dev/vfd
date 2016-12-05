@@ -9,7 +9,7 @@ OS Configs
 
 /etc/default/grub
 -GRUB_CMDLINE_LINUX_DEFAULT="nomdmonddf nomdmonisw"
-+GRUB_CMDLINE_LINUX_DEFAULT="nomdmonddf nomdmonisw intel_iommu=on hugepagesz=1G hugepages=240 default_hugepagesz=1G"
++GRUB_CMDLINE_LINUX_DEFAULT="nomdmonddf nomdmonisw intel_iommu=on iommu=pt hugepagesz=1G hugepages=240 default_hugepagesz=1G"
 
 3. Then update grub and reboot system:
 $ update-grub
